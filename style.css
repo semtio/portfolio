@@ -1,9 +1,36 @@
 body {
+    margin: 0;
+    padding: 0;
+
     background-color: #333;
     color: rgb(255, 255, 255);
 
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
+
+    position: relative;
+
+}
+
+summary {
+    cursor: pointer;
+    color: tomato;
+
+    font-weight: bolder;
+}
+
+details p {
+    line-height: 1.5;
+}
+
+.animate-1 {
+    transition: 1s;
+    opacity: 1 !important;
+    margin-top: 20px !important;
+}
+
+section {
+    margin-top: 3em;
 }
 
 a {
@@ -11,8 +38,26 @@ a {
     color: inherit;
 }
 
+li {
+    line-height: 1.5;
+}
+
 .main {
     margin: 0 5em;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #0065ff;
+
+    margin-top: 5em;
+    padding: 1.3em 5em;
+    position: absolute;
+
+    width: 100%;
+    height: auto;
 }
 
 /* кросплатформенность */
