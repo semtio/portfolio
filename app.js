@@ -1,6 +1,6 @@
-let summary = document.querySelector('summary');
+let summaryPUSH = document.querySelector('#summaryPUSH');
 let summaryText = document.querySelector('#summaryText');
 
-summary.addEventListener('click', function () {
-    summaryText.classList.add('animate-1');
+summaryPUSH.addEventListener('click', function () {
+    summaryText.classList.toggle('animate-1');
 });
