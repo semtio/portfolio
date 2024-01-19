@@ -34,12 +34,6 @@
     <link rel="stylesheet" href="reset.css">
 
     <!-- Yandex.Metrika counter -->
-
-    if (!window.location.href.includes("127.0.0.1") &&
-    !window.location.href.includes("https://semtio.github.io/portfolio/?version=commit_id")) {
-    // Здесь разместить код Яндекс.Метрики
-    }
-
     <script type="text/javascript">
         if (!window.location.href.includes("127.0.0.1") && !window.location.href.includes(
                 "https://semtio.github.io/portfolio/?version=commit_id")) {
@@ -71,6 +65,17 @@
 </head>
 
 <body>
+
+    <script>
+        let summaryPUSH = document.querySelector('#summaryPUSH');
+        let summaryText = document.querySelector('#summaryText');
+
+        summaryPUSH.addEventListener('click', function () {
+            summaryText.classList.toggle('animate-1');
+            summaryText.classList.toggle('animate-2');
+        });
+    </script>
+
     <div class="main">
         <header>
             <h1>Дементьев Семён: WEB frontend developer</h1>
