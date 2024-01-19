@@ -22,7 +22,7 @@
     <meta name="description"
         content="Портфолио Дементьева Семёна, включающее навыки веб-разработки, проекты и личный опыт.">
     <meta name="keywords"
-        content="веб-разработка, HTML, CSS, JavaScript, Vue.js, PHP, WordPress, серверное обслуживание, операционные системы, разработка сайтов">
+        content="веб-разработка, HTML, CSS, JavaScript, Vue.js, PHP, WordPress, серверное обслуживание, операционные системы, разработка сайтов, ищу программиста, нужен программист, создание сайтов">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,32 +34,39 @@
     <link rel="stylesheet" href="reset.css">
 
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            for (var j = 0; j < document.scripts.length; j++) {
-                if (document.scripts[j].src === r) {
-                    return;
-                }
-            }
-            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
-                .insertBefore(k, a)
-        })
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-        ym(96177698, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-        });
+    if (!window.location.href.includes("127.0.0.1") &&
+    !window.location.href.includes("https://semtio.github.io/portfolio/?version=commit_id")) {
+    // Здесь разместить код Яндекс.Метрики
+    }
+
+    <script type="text/javascript">
+        if (!window.location.href.includes("127.0.0.1") && !window.location.href.includes(
+                "https://semtio.github.io/portfolio/?version=commit_id")) {
+            (function (m, e, t, r, i, k, a) {
+                m[i] = m[i] || function () {
+                    (m[i].a = m[i].a || []).push(arguments)
+                };
+                m[i].l = 1 * new Date();
+                for (var j = 0; j < document.scripts.length; j++) {
+                    if (document.scripts[j].src === r) {
+                        return;
+                    }
+                }
+                k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode
+                    .insertBefore(k, a)
+            })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+            ym(96177698, "init", {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+        }
     </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/96177698" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
+
     <!-- /Yandex.Metrika counter -->
 </head>
 
@@ -71,7 +78,7 @@
                 <summary id="summaryPUSH">
                     Для работодателя:
                 </summary>
-                <p id="summaryText">
+                <p id="summaryText" class="animate-2">
                     В поисках профессиональных возможностей, где могу внести свой вклад без предварительного
                     конкурсного
                     отбора.

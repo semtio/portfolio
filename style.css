@@ -22,12 +22,17 @@ summary {
 details p {
     line-height: 1.5;
     opacity: 0;
-    margin-top: -20px;
 }
 
 .animate-1 {
     opacity: 1;
     margin-top: 20px;
+    transition: 1s;
+}
+
+.animate-2 {
+    opacity: 0;
+    margin-top: -20px;
     transition: 1s;
 }
 
