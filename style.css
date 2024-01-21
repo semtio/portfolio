@@ -12,23 +12,34 @@ body {
 
 }
 
-summary {
+.summaryPUSH_btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+
+    border: solid 1px #fff;
+    border-radius: 7px;
+
     cursor: pointer;
-    color: tomato;
 
-    font-weight: bolder;
+    padding: 1em;
+
+    font-size: 1em;
 }
 
-/* 
-details p {
-    line-height: 1.5;
-    opacity: 0;
-}
-*/
+.summaryPUSH_btn:hover {
+    transition: .3s;
+    color: #333;
+    background-color: #fff;
 
-details p {
-    line-height: 1.5;
-    opacity: 0;
+}
+
+.aboutme {
+    line-height: 0.6;
+    margin-bottom: 3em;
+}
+
+.active {
+    color: lime;
 }
 
 .animate-1 {
@@ -38,9 +49,16 @@ details p {
 }
 
 .animate-2 {
+    display: none;
+}
+
+.animate-3 {
     opacity: 0;
     margin-top: -20px;
-    transition: 1s;
+}
+
+#summaryText {
+    line-height: 1.5;
 }
 
 section {

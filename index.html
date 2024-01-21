@@ -67,8 +67,12 @@
 <body>
     <div class="main">
         <header>
-            <h1>Дементьев Семён: WEB frontend developer</h1>
-            <details>
+            <div class="aboutme">
+                <h1>Дементьев Семён: WEB frontend developer</h1>
+                <span>О да! Я только начал :) </span>
+            </div>
+
+            <!-- <details >
                 <summary id="summaryPUSH">
                     Для работодателя:
                 </summary>
@@ -86,7 +90,22 @@
                     вашему бизнесу, а в ответ получая бесценный опыт и интересную работу.
                 </p>
 
-            </details>
+            </details> -->
+
+            <button class="summaryPUSH_btn" id="summaryPUSH" type="button">ДЛЯ РАБОТОДАТЕЛЯ</button>
+            <p id="summaryText" class="animate-2">
+                В поисках профессиональных возможностей, где могу внести свой вклад без предварительного
+                конкурсного
+                отбора.
+                Я полон энтузиазма и готовностью к труду, при этом открыт к обучению и развитию. Готов
+                рассмотреть
+                предложения с умеренным уровнем заработной платы, важнее для меня - взаимоуважение и
+                человеческий подход
+                в
+                рабочих отношениях. Уверен, что смогу стать ценным сотрудником, демонстрируя благодарность и
+                уважение к
+                вашему бизнесу, а в ответ получая бесценный опыт и интересную работу.
+            </p>
 
         </header>
 
@@ -239,8 +258,12 @@
         let summaryText = document.querySelector('#summaryText');
 
         summaryPUSH.addEventListener('click', function () {
+            setTimeout(() => {
+                summaryText.classList.toggle('animate-3');
+            }, 50);
             summaryText.classList.toggle('animate-1');
             summaryText.classList.toggle('animate-2');
+            summaryText.classList.toggle('animate-3');
         });
     </script>
 </body>
