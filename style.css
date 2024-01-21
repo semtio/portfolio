@@ -19,6 +19,13 @@ summary {
     font-weight: bolder;
 }
 
+/* 
+details p {
+    line-height: 1.5;
+    opacity: 0;
+}
+*/
+
 details p {
     line-height: 1.5;
     opacity: 0;
