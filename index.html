@@ -28,6 +28,9 @@
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+
+    <!-- Fontawessom -->
+    <link rel="stylesheet" href="../../../../mainFolder/fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
 
 <body>
@@ -37,10 +40,117 @@
             background-color: #333;
             color: aliceblue;
         }
+
+        .main-p-m {
+            margin: 50px;
+            padding: 50px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            margin-top: 10px;
+            font-size: 1.5em;
+        }
+
+        hr {
+            width: 100px;
+            height: 3px;
+            color: aliceblue;
+            background-color: #fff;
+
+            margin: 3em 0 3em 0;
+
+        }
+
+        .contacts i {
+            display: flex;
+            justify-content: center;
+
+            padding-right: 5px;
+            margin-left: -5px;
+
+            width: 2em;
+        }
+
+        .contacts a {
+            align-items: center;
+
+            margin: .75em 0 .75em 0;
+
+            display: flex;
+        }
+
+        .tags span {
+            display: block;
+            margin-bottom: 5px;
+        }
     </style>
 
-    <h1>Developer Dementiew Semyon</h1>
-    <h2>Website is being updated</h2>
+    <div class="main">
+        <article class="main-p-m">
+            <header>
+                <h1>Website is being updated</h1>
+                <h2>Developer Dementiew Semyon</h2>
+            </header>
+
+            <div class="contacts">
+                <hr>
+                <h3>Contacts</h3>
+                <a href="mailto:semik20092@gmail.com"><i class="fa-regular fa-envelope"></i>semik20092@gmail.com</a>
+                <a href="tel:48729270079"><i class="fa-solid fa-mobile-screen-button"></i>+48729270079</a>
+                <a target="_blank" href="https://t.me/semtio"><i class="fa-brands fa-telegram"></i>@semtio</a>
+            </div>
+
+
+            <div class="contacts">
+                <hr>
+                <h3>My skills</h3>
+                <span class="tags">
+                    <br>
+                    <span>
+                        #Photoshop #Figma
+                    </span>
+                    <span>
+                        #HTML #CSS #JavaScript #PHP
+                    </span>
+
+                    <span>
+                        #WordPress #Elementor #Gutenberg #WPBackery #TemplateMonster #BeTheme #Avada
+                    </span>
+
+                    <span>
+                        #SharedHosting #Server #CPanel
+                    </span>
+
+                    <span>
+                        #Linux #Ubuntu #Terminal
+                    </span>
+
+                    <span>
+                        <br>
+                        #AdnMore...
+                    </span>
+                </span>
+
+            </div>
+
+
+
+        </article>
+    </div>
+
+
 
     <script src="app.js"></script>
 </body>
