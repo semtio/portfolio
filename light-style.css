@@ -1,0 +1,37 @@
+.body-dark {
+    background-color: #333;
+    color: aliceblue;
+}
+
+.body-light {
+    background-color: aliceblue;
+    color: #333;
+}
+
+hr {
+    color: aliceblue;
+    background-color: #fff;
+}
+
+a {
+    color: rgb(0, 255, 183);
+}
+
+.reports button {
+    background-color: #fff;
+    color: #333;
+}
+
+.reports button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.works div span {
+    color: #797979;
+    font-style: italic;
+}
+
+.dark-light button {
+    cursor: pointer;
+}
