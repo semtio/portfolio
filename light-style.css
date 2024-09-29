@@ -1,37 +1,50 @@
-.body-dark {
-    background-color: #333;
-    color: aliceblue;
-}
+@import url('style.css');
 
-.body-light {
-    background-color: aliceblue;
-    color: #333;
+body {
+    background-color: aliceblue !important;
+    color: #333 !important;
 }
 
 hr {
-    color: aliceblue;
-    background-color: #fff;
+    background-color: #333 !important;
 }
 
 a {
-    color: rgb(0, 255, 183);
+    color: rgb(255, 128, 0) !important;
 }
 
 .reports button {
-    background-color: #fff;
-    color: #333;
+    background-color: #333 !important;
+    color: aliceblue !important;
 }
 
 .reports button:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: aliceblue !important;
+    color: #333 !important;
+    box-shadow: #333 5px 5px 0 !important;
+}
+
+.reports button:active {
+    box-shadow: #333 0 0 10px !important;
 }
 
 .works div span {
-    color: #797979;
-    font-style: italic;
+    color: #797979 !important;
+    font-style: italic !important;
 }
 
 .dark-light button {
-    cursor: pointer;
+    cursor: pointer !important;
+}
+
+.closed {
+    color: #fff !important;
+    background-color: #333 !important;
+}
+
+.popup_img-wrap {
+    background-color: #ff800057;
+    border: solid #ff80004f 3px;
+    padding: 3em;
+    border-radius: 7px;
 }

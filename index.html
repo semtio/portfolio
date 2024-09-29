@@ -20,7 +20,7 @@
     <!-- Дополнительные мета-теги -->
 
     <!-- <link rel="stylesheet" href="reset.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="main-css">
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="reset.css">
 
@@ -28,177 +28,19 @@
     <link rel="stylesheet" href="css/all.min.css">
 </head>
 
-<body class="body-dark">
-
-    <style>
-        .body-dark {
-            background-color: #333;
-            color: aliceblue;
-        }
-
-        .body-light {
-            background-color: aliceblue;
-            color: #333;
-        }
-
-        .main-p-m {
-            margin: 50px;
-            padding: 50px;
-        }
-
-        .main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-family: "Roboto", sans-serif;
-        }
-
-        h1 {
-            font-size: 3em;
-        }
-
-        h2 {
-            margin-top: 10px;
-            font-size: 1.5em;
-        }
-
-        h3 {
-            font-weight: 900 !important;
-        }
-
-        hr {
-            width: 100px;
-            height: 3px;
-            color: aliceblue;
-            background-color: #fff;
-
-            margin: 3em 0 3em 0;
-
-        }
-
-        .contacts i {
-            display: flex;
-            justify-content: center;
-
-            padding-right: 5px;
-            margin-left: -5px;
-
-            width: 2em;
-        }
-
-        .contacts a {
-            align-items: center;
-
-            margin: .75em 0 .75em 0;
-
-            display: flex;
-        }
-
-        .tags span {
-            display: block;
-            margin-bottom: .5em;
-            word-spacing: .35em;
-        }
-
-        a {
-            color: rgb(0, 255, 183);
-            font-weight: 600;
-        }
-
-        .works span {
-            margin-bottom: 1.5em;
-        }
-
-        .works p {
-            margin-top: .3em;
-        }
-
-        .reports button {
-            padding: 1em;
-            background-color: #fff;
-            color: #333;
-            border-radius: 7px;
-        }
-
-        .reports button:hover {
-            transition: .3s;
-            border: solid 1px;
-            cursor: pointer;
-            border-radius: 7px;
-
-            background-color: #333;
-            color: #fff;
-        }
-
-        .reports i {
-            margin-left: .5em;
-        }
-
-        .works div span {
-            color: #dddddd;
-            font-style: italic;
-        }
-
-        .dark-light {
-            font-size: 2em;
-            position: fixed;
-            top: 1em;
-            right: 2em;
-        }
-
-        .dark-light button {
-            cursor: pointer;
-        }
-
-        .ok {
-            display: block;
-        }
-
-        .ng {
-            display: none;
-        }
-    </style>
-
+<body>
 
     <div class="dark-light">
         <button> <i class="fa-solid fa-moon ng"></i></button>
         <button> <i class="fa-solid fa-sun"></i></button>
     </div>
 
-
-    <script>
-        // dark mod
-        let faMoon = document.querySelector('.fa-moon');
-        let faSun = document.querySelector('.fa-sun');
-        let body = document.querySelector('body');
-
-        function darkModFC(a, b, bodyD, bodyL) {
-            a.addEventListener('click', function () {
-                if (!a.classList.contains('ng')) {
-                    a.classList.add('ng');
-                    b.classList.remove('ng');
-                    b.classList.add('ok');
-
-                    if (body.classList.contains('body-dark')) {
-                        body.classList.remove('body-dark');
-                        body.classList.add('body-light');
-                    } else {
-                        body.classList.remove('body-light');
-                        body.classList.add('body-dark');
-                    }
-                }
-            });
-        }
-        darkModFC(faSun, faMoon);
-        darkModFC(faMoon, faSun);
-
-    </script>
-
-
-    <!-- body {
-    background-color: #333;
-    color: aliceblue;
-    } -->
+    <div class="popup ng">
+        <div class="popup_img-wrap">
+            <button class="closed">✕</button>
+            <img src="1.png" alt="">
+        </div>
+    </div>
 
 
     <div class="main">
@@ -206,7 +48,6 @@
             <header>
                 <h1>
                     Website is being created
-                    <!-- <i class="fa-solid fa-trowel-bricks"></i> -->
                 </h1>
                 <h2>Developer Dementiew Semyon</h2>
             </header>
@@ -307,8 +148,7 @@
                 <span class="tags">
                     <br>
 
-                    <button>View docs <i class="fa-brands fa-dochub"></i></button>
-
+                    <button class="reports-btn">View docs <i class="fa-brands fa-dochub"></i></button>
 
                 </span>
 
