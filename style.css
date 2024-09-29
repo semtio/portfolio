@@ -68,7 +68,8 @@ hr {
 }
 
 a {
-
+    /* width: 100px; */
+    /* border: solid; */
     color: rgb(0, 255, 183);
     font-weight: 600;
 }
