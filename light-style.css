@@ -1,6 +1,8 @@
 @import url('style.css');
 
 body {
+    background-image: url('bgl.jpg') !important;
+    background-size: 15% !important;
     background-color: aliceblue !important;
     color: #333 !important;
 }
