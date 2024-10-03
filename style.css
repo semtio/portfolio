@@ -12,7 +12,7 @@ body {
 }
 
 .main {
-    background-attachment: scroll;
+    /* background-attachment: scroll; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,15 +42,8 @@ hr {
 
 }
 
-
-.contacts i {
-    display: flex;
-    justify-content: center;
-
-    padding-right: 5px;
-    margin-left: -5px;
-
-    width: 2em;
+.contacts .tags {
+    line-height: 1.5em;
 }
 
 .contacts a {
@@ -61,8 +54,12 @@ hr {
     display: flex;
 }
 
+.contacts a i {
+    margin-right: 1em;
+}
+
 .tags span {
-    display: block;
+    display: block !important;
     margin-bottom: .9em;
     word-spacing: .35em;
 }
