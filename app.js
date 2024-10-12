@@ -2,8 +2,8 @@
 let faMoon = document.querySelector('.fa-moon');
 let faSun = document.querySelector('.fa-sun');
 let mainCss = document.querySelector('#main-css');
+
 // dark mod off
-// console.log(mainCss.href = 'light-style.css');
 let flagLightDark = true;
 function darkModFC(a, b) {
     a.addEventListener('click', function () {
