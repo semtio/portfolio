@@ -55,6 +55,10 @@ hr {
     display: flex;
 }
 
+.main article a {
+    display: inline-block;
+}
+
 .contacts a i {
     margin-right: 1em;
 }

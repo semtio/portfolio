@@ -146,9 +146,10 @@
         option.addEventListener('click', (event) => {
             event.preventDefault();
             event.stopPropagation();
-            searchInput.value = item.name;
+            searchInput.value = '';
             addServiceToCart(item, cartState);
             clearSearchResults(searchResults);
+            searchInput.focus();
         });
         return option;
     }
