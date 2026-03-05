@@ -3,6 +3,7 @@ body {
     background-size: 15%;
     color: aliceblue;
     line-height: 1.45;
+    overflow-x: hidden;
 }
 
 .main-p-m {
