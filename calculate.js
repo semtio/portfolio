@@ -106,7 +106,7 @@
 
     function createCartContainer(searchResults) {
         const cartWrap = document.createElement('div');
-        cartWrap.className = 'calculate-selected calculate-placeholder';
+        cartWrap.className = 'calculate-selected calculate-cart-wrap';
 
         const cartTitle = document.createElement('strong');
         cartTitle.textContent = 'Cart:';
