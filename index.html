@@ -34,9 +34,27 @@
     </div>
 
     <div class="popup ng">
-        <div class="popup_img-wrap">
+        <div class="popup img-wrap">
             <button class="closed">✕</button>
             <img src="1.png" alt="">
+        </div>
+    </div>
+
+    <div class="calculate-modal ng" aria-hidden="true">
+        <div class="calculate-modal__panel" role="dialog" aria-modal="true" aria-label="Calculate price modal">
+            <button class="calculate-closed" type="button" aria-label="Close calculate modal">✕</button>
+            <h3>Calculate</h3>
+            <hr class="calculate-divider">
+            <p class="calculate-note">
+                This is an approximate average price calculator for clients. Final cost depends on project details.
+            </p>
+
+            <label class="calculate-search-label" for="calculate-search">Search service</label>
+            <input id="calculate-search" class="calculate-search" type="search" placeholder="Search service...">
+
+            <div class="calculate-placeholder">
+                Calculator UI is in progress. Next step: add project options and automatic price formula.
+            </div>
         </div>
     </div>
 
@@ -44,9 +62,15 @@
         <article class="main-p-m">
             <header>
                 <h1>
-                    Website is being created
+                    WordPress Developer • PHP • ACF • Gutenberg • WooCommerce • Speed Optimization
                 </h1>
                 <h2>by Developer Dementiev Semyon</h2>
+                <span id="hourly-rate" aria-live="polite">15.0000$ in hour</span>
+                <br>
+
+
+                <button class="calculator-btn"> <i class="fa-solid fa-calculator">   Calculate </i> </button>
+
             </header>
 
             <div class="contacts">
@@ -54,7 +78,7 @@
                 <h3>Contacts:</h3>
                 <a href="mailto:semik20092@gmail.com"><i class="fa-regular fa-envelope"></i>semik20092@gmail.com</a>
                 <a href="tel:48729270079"><i class="fa-solid fa-phone-flip"></i>+48729270079</a>
-                <a target="_blank" href="https://t.me/semtio"><i class="fa-brands fa-telegram"></i>@semtio</a>
+                <a target=" blank" href="https://t.me/semtio"><i class="fa-brands fa-telegram"></i>@semtio</a>
             </div>
 
             <div class="contacts">
@@ -64,38 +88,71 @@
                     <br>
                     <span>
                         <i class="fa-solid fa-brush"></i>
-                        #Photoshop #Figma #More...
+                         Photoshop • Figma • Illustrator • Canva • Affinity • Krita AI
                     </span>
                     <span>
                         <i class="fa-solid fa-code"></i>
-                        #HTML #CSS #JavaScript #PHP #More...
+                        HTML • CSS • JavaScript • PHP • Python • REST API • SPA
                     </span>
 
                     <span>
                         <i class="fa-brands fa-wordpress"></i>
-                        #WordPress #Advanced_Custom_Fields #ACF #Carbon_Fields #Elementor #Gutenberg
-                        #WPBackery
-                        #TemplateMonster #BeTheme
-                        #Avada #More...
+                        WordPress • ACF • Carbon Fields • Elementor • Gutenberg
+                        WPBackery • WooCommerce • Yoast SEO • WPML • Contact Form 7 WP CLI • Hooks • Actions • Filters
+                        TemplateMonster • BeTheme
+                        Avada • Plugin Development • Theme Development
                     </span>
 
                     <span>
                         <i class="fa-solid fa-server"></i>
-                        #SharedHosting #Server #CPanel #ISPmanager #More...
+                        SharedHosting • Server • Linux Server • CPanel • ISPmanager • VestaCP • HestiaCP • CyberPanel
+
                     </span>
 
                     <span>
                         <i class="fa-brands fa-linux"></i>
-                        #Linux #Ubuntu #Terminal #More...
+                        Linux • Ubuntu • Debian • Terminal • CLI • SSH
                     </span>
 
                     <span>
                         <i class="fa-brands fa-github"></i>
-                        #GIT #GIT_LIKE #More...
+                        GIT • GIT LIKE • Performance 93+ • SEO Basic
                     </span>
 
                     <span>
-                        #And More...
+                        N8N • Telegram Bots • WhatsApp Bots • Viber Bots • Automation • iGaming • And More...
+                    </span>
+                </span>
+            </div>
+
+            <div class="expertise">
+                <hr>
+                <h3>Core Expertise:</h3>
+                <span class="tags">
+                    <br>
+                    <span>
+                        <i class="fa-solid fa-gears"></i>
+                        WordPress core development, REST API integrations, custom post types, and advanced custom fields.
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-gauge-high"></i>
+                        Performance optimization with practical results: 93+ in real projects and reliable SEO-ready setup.
+                    </span>
+                </span>
+            </div>
+
+            <div class="automation">
+                <hr>
+                <h3>Automation & Integrations:</h3>
+                <span class="tags">
+                    <br>
+                    <span>
+                        <i class="fa-solid fa-robot"></i>
+                        Service automation with N8N, Telegram/WhatsApp bots, and mass WordPress maintenance workflows.
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-code-branch"></i>
+                        Experience with high-volume deployments, custom tooling, and operational support for multiple sites.
                     </span>
                 </span>
             </div>
@@ -122,10 +179,10 @@
                     <span>
                         <i class="fa-brands fa-wordpress"></i>
                         Works on WordPress:
-                        <p> <a target="_blank" href="https://sila-stroy.ru/">https://sila-stroy.ru/</a> - Plugin
+                        <p> <a target=" blank" href="https://sila-stroy.ru/">https://sila-stroy.ru/</a> - Plugin
                             integration and design
                             customization.</p>
-                        <p><a target="_blank" href="https://astrokat.ru/">https://astrokat.ru/</a> - Working with
+                        <p><a target=" blank" href="https://astrokat.ru/">https://astrokat.ru/</a> - Working with
                             templates and
                             customizing the theme.</p>
                     </span>
@@ -133,26 +190,48 @@
                     <span>
                         <i class="fa-solid fa-table-cells-large"></i>
                         Websites with Personal Layout
-                        <p> <a target="_blank" href="https://skrepeckiy.com/">https://skrepeckiy.com/</a> - Using UIkit
+                        <p> <a target=" blank" href="https://skrepeckiy.com/">https://skrepeckiy.com/</a> - Using UIkit
                             framework,
                             Flexbox.</p>
-                        <p><a target="_blank" href="https://italiaguidaitalia.com/">https://italiaguidaitalia.com/</a> -
+                        <p><a target=" blank" href="https://italiaguidaitalia.com/">https://italiaguidaitalia.com/</a> -
                             Development
                             based on Elementor framework, Flexbox.</p>
                     </span>
 
                     <span>
                         <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Core WordPress / i-Gaming Experience
+                        <p><a target=" blank" href="https://spinsahara-casino.org/">https://spinsahara-casino.org/</a></p>
+                        <p><a target=" blank" href="https://forestarrow.es/">https://forestarrow.es/</a></p>
+                        <p><a target=" blank" href="https://honeybetzonline.com/">https://honeybetzonline.com/</a></p>
+                        <p><a target=" blank" href="https://mayamilano.it/">https://mayamilano.it/</a></p>
+                        <p><a target=" blank" href="https://fragacasino.com/">https://fragacasino.com/</a></p>
+                        <p><a target=" blank" href="https://fragabet-azerbaycan.ink/">https://fragabet-azerbaycan.ink/</a></p>
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        Tilda / Mixed Stack Projects
+                        <p><a target=" blank" href="https://zaborvmosckve.tilda.ws/">https://zaborvmosckve.tilda.ws/</a></p>
+                        <p><a target=" blank" href="https://franchise.double-b.ru/">https://franchise.double-b.ru/</a></p>
+                        <p><a target=" blank" href="https://somodernart.com/">https://somodernart.com/</a></p>
+                        <p><a target=" blank" href="https://italiaguidaitalia.com/">https://italiaguidaitalia.com/</a></p>
+                        <p><a target=" blank" href="https://sovaplast.ru/">https://sovaplast.ru/</a></p>
+                        <p><a target=" blank" href="https://proaudioconsulting.pro/">https://proaudioconsulting.pro/</a></p>
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-list-check"></i>
                         Completed Projects
-                        <p><a target="_blank" href="https://sovaplast.ru/">https://sovaplast.ru/</a> - Making more than
-                            30
+                        <p><a target=" blank" href="https://sovaplast.ru/">https://sovaplast.ru/</a> - Making more than
+                            100+
                             edits, including
                             layout and PHP logic.</p>
                     </span>
 
                     <div>
                         <span>
-                            There was more work, and after the war many businesses were closed.
+                           some sites may not work for reasons beyond my control
                         </span>
                     </div>
 
@@ -180,7 +259,9 @@
         </article>
     </div>
 
-    <script src="app.js"></script>
+    <script src="theme.js"></script>
+    <script src="salary.js"></script>
+    <script src="calculate.js"></script>
 </body>
 
 </html>
