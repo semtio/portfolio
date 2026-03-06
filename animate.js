@@ -13,30 +13,32 @@ function slider1() {
     return createAnimationConfig(
         'skills-section',
         [
-            './img/1.webp',
             './img/2.webp',
-            './img/3.webp',
+            './img/1.webp',
             './img/4.webp',
-            './img/5.webp',
+            './img/3.webp',
             './img/6.webp',
-            './img/7.webp',
+            './img/5.webp',
             './img/8.webp',
-            './img/9.webp',
+            './img/7.webp',
             './img/10.webp',
-            './img/11.webp',
+            './img/9.webp',
             './img/12.webp',
+            './img/11.webp',
+            './img/14.webp',
             './img/13.webp',
-            './img/14.webp'
         ],
         {
-            radius: 380,
-            imageSize: 220,
-            centerX: 1.08,
-            centerY: 0.52,
-            sensitivity: 0.0011,
+            radius: 680,
+            imageSize: 320,
+            centerX: 1.30,
+            centerY: 1.10,
+            constantSpeed: 0.0011,
+            sensitivity: 0.0001,
             lag: 0.11,
             damping: 0.935,
             maxVelocity: 0.055
+
         }
     );
 }
@@ -54,6 +56,7 @@ function slider2() {
             imageSize: 180,
             centerX: 1.04,
             centerY: 0.5,
+            constantSpeed: 0.0016,
             sensitivity: 0.0009,
             lag: 0.1,
             damping: 0.93,
@@ -113,6 +116,7 @@ function createAnimationConfig(targetId, imagePaths, options = {}) {
             centerX: options.centerX ?? 1.06,
             centerY: options.centerY ?? 0.56,
             startAngle: options.startAngle ?? 0,
+            constantSpeed: options.constantSpeed ?? 0,
             sensitivity: options.sensitivity ?? 0.00095,
             lag: options.lag ?? 0.12,
             damping: options.damping ?? 0.93,
@@ -227,7 +231,7 @@ function startOrbitAnimation(config) {
             currentVelocity = 0;
         }
 
-        angle += currentVelocity;
+        angle += currentVelocity + config.options.constantSpeed;
         applyOrbitFrame(items, target, config.options, angle);
 
         requestAnimationFrame(animate);
